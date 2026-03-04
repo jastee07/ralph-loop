@@ -27,8 +27,10 @@ PYTHONUSERBASE=/data/.local python3 -m pip install --user --break-system-package
 
 See:
 - `docs/OPERATOR_RUNBOOK.md` for setup, daily ops, and troubleshooting
+- `docs/AGENT_SUPERVISION.md` for tmux + heartbeat watchdog operations
 - `docs/DEMO_ACCEPTANCE.md` for reproducible v1 demo acceptance steps
 - `docs/PACKAGING.md` for install/packaging options (dev, pipx, homebrew path)
+- `CONTRIBUTING.md` for contribution workflow and quality gates
 
 ## Defaults
 
@@ -37,6 +39,11 @@ See:
 - auto-commit: `true`
 - require PR before merge: `true`
 - creates branch: `ralph/<run_id>`
+
+## Operational Scripts
+
+- `scripts/install-dev.sh` — editable install helper
+- `scripts/watchdog.sh` — tmux + heartbeat supervisor for unattended runs
 
 ## Iteration Artifacts
 
