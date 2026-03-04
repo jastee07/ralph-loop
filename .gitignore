@@ -19,6 +19,16 @@ dist/
 # Logs
 *.log
 
+# Runtime artifacts
+ralph/
+!ralph/.gitkeep
+
+# Demo generated state
+demo/ralph/loop-state.json
+demo/ralph/progress.log
+
+demo/**/__pycache__/
+
 # Editor
 *.swp
 *.swo

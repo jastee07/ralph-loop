@@ -68,7 +68,11 @@ ralph-loop validate
 - Ctrl+C sets mode to `paused`
 - Continue with `ralph-loop resume`
 
-## 7) Guardrail tuning (`ralph/config.json`)
+## 7) Long-running operations
+
+For resilient unattended runs (tmux sessions, heartbeat checks, stall recovery ladder), see `docs/AGENT_SUPERVISION.md`.
+
+## 8) Guardrail tuning (`ralph/config.json`)
 
 - `max_iterations`
 - `max_consecutive_failures`
