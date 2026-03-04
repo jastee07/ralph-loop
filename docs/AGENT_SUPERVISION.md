@@ -29,6 +29,8 @@ A reference watchdog is included at:
 
 - `scripts/watchdog.sh`
 
+By default it writes runtime telemetry to `.ralph-runtime/` (ignored by git), so `require_clean_git=true` runs are not dirtied by watchdog state.
+
 Example usage:
 
 ```bash

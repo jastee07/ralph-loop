@@ -21,8 +21,8 @@ RUN_CMD="ralph-loop run --prd ralph/prd.json --config ralph/config.json"
 INTERVAL=90
 STALL_CHECKS=2
 RESTART_CAP_PER_HOUR=3
-STATE_FILE="ralph/watchdog-state.json"
-LOG_FILE="ralph/watchdog.log"
+STATE_FILE=".ralph-runtime/watchdog-state.json"
+LOG_FILE=".ralph-runtime/watchdog.log"
 
 usage() {
   cat <<EOF
