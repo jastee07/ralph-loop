@@ -1,0 +1,15 @@
+{
+  "tasks": [
+    {
+      "id": "task-1",
+      "title": "Replace with your first task",
+      "description": "Describe expected outcome",
+      "status": "todo",
+      "acceptance_criteria": [
+        "Define measurable pass criteria"
+      ],
+      "priority": "high",
+      "dependencies": []
+    }
+  ]
+}
