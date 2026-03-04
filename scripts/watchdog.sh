@@ -137,10 +137,10 @@ while true; do
 
   # sliding-window restart cap
   keep=()
-  for t in "${restart_times[@]:-}"; do
+  for t in "${restart_times[@]}"; do
     if (( now_epoch - t < 3600 )); then keep+=("$t"); fi
   done
-  restart_times=("${keep[@]:-}")
+  restart_times=("${keep[@]}")
   if (( ${#restart_times[@]} >= RESTART_CAP_PER_HOUR )); then
     log "Restart cap reached (${RESTART_CAP_PER_HOUR}/hour). Exiting watchdog for manual intervention."
     exit 2
