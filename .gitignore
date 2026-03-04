@@ -19,6 +19,9 @@ dist/
 # Logs
 *.log
 
+# Local runtime state
+.ralph-runtime/
+
 # Runtime artifacts
 ralph/
 !ralph/.gitkeep
